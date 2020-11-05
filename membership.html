@@ -23,6 +23,7 @@
 </head>
 
 <body>
+  <div class="container">
   <header>
     <nav class="nav-bar">
       <a href="https://jaipur.manipal.edu/" target="_blank"><img class="logo" id="college"
@@ -216,20 +217,9 @@
           <div class="form-group">
             <label for="stream">Stream</label>
             <select name="Stream" id="stream" required>
-              <option valur="base" disabled selected>Select an option</option>
+              <option value="base" disabled selected>Select an option</option>
               <option value="Btech">Btech</option>
-              <option value="Mtech">Mtech</option>
-              <option value="BA (Hons)/BA (LiberaL Arts)">BA (Hons)/BA (LiberaL Arts)</option>
-              <option value="BA LLB">BA LLB</option>
-              <option value="BBA LLM">BBA LLM</option>
-              <option value="LLB">LLB</option>
-              <option value="LLM">LLM</option>
-              <option value="BCA">BCA</option>
-              <option value="BArch">BArch</option>
-              <option value="MBA">MBA</option>
-              <option value="BBA">BBA</option>
-              <option value="BHM">BHM</option>
-              <option value="Other">Other</option>
+              <option value="Non Btech">Non Btech</option>
             </select>
           </div>
 
@@ -311,7 +301,7 @@
     </div>
     <p class="container">Copyright © 2020 RPM-SAE MUJ Muj. All Rights Reserved </p>
   </footer>
-
+</div>
 
   <script>
     var navBtnOutter = document.querySelector("#outter-btn");
@@ -382,7 +372,7 @@
       fetch(scriptURL, {
         method: 'POST',
         body: new FormData(form)})
-        .then(response => console.log(body.values()))
+        .then(response => alert("Success!"))
         .catch(error => alert("error!"))
     });
   </script>
