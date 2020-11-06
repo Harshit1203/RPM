@@ -23,285 +23,284 @@
 </head>
 
 <body>
-  <div class="container">
-  <header>
-    <nav class="nav-bar">
-      <a href="https://jaipur.manipal.edu/" target="_blank"><img class="logo" id="college"
-          src="images\\manipal-logo.jpeg" alt="Manipal University Logo" /></a>
-      <a class="navbar-brand " href="#">RPM-SAEMUJ</a>
+  <div class="cover">
+    <header>
+      <nav class="nav-bar">
+        <a href="https://jaipur.manipal.edu/" target="_blank"><img class="logo" id="college"
+            src="images\\manipal-logo.jpeg" alt="Manipal University Logo" /></a>
+        <a class="navbar-brand " href="#">RPM-SAEMUJ</a>
 
-      <div class="nav-btn hide-mobo" id="outter-btn">
-        <span class="fas fa-bars"></span>
-      </div>
-
-      <div class="hide show-desktop" id="nav-menu">
-        <div class="hide-mobo nav-btn" id="inner-btn">
+        <div class="nav-btn hide-mobo" id="outter-btn">
           <span class="fas fa-bars"></span>
         </div>
 
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="events.html">Events</a>
-          <a href="blogs.html">Blogs</a>
-          <a href="#"><span class="current">Membership</span></a>
-          <a href="teams.html">Teams</a>
-        </div>
-      </div>
-    </nav>
+        <div class="hide show-desktop" id="nav-menu">
+          <div class="hide-mobo nav-btn" id="inner-btn">
+            <span class="fas fa-bars"></span>
+          </div>
 
-    <section class="banner container-fluid">
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="#"><span class="current">Membership</span></a>
+            <a href="teams.html">Teams</a>
+          </div>
+        </div>
+      </nav>
+
+      <section class="banner">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="headline">
+              <i class="fas fa-user-plus"></i>
+              <h2>Membership</h2>
+            </div>
+
+            <h1>Get revved up.</h1>
+
+            <h3>Become an RPM-SAEMUJ Member Today!</h3>
+            <a href="#registration" class="btn btn-primary">Register now</a>
+          </div>
+
+          <div class="col-md-6">
+            <h2>MEMEBER BENEFITS</h2>
+            <ul>
+              <li>
+                <p>Get a chance to participate in various car teams and represent the college at national level, gaining
+                  lots of exposure</p>
+              </li>
+              <li>
+                <p>Best platform to showcase your technical skills and designing skills.</p>
+              </li>
+              <li>
+                <p>Learn the most important values such as teamwork, hard work and dedication by being a part of the
+                  club. </p>
+              </li>
+              <li>
+                <p>Utilise the resources the club provides to increase your technical knowledge by becoming a member.
+                </p>
+              </li>
+              <li>
+                <p>Being a part of the club, get a closer experience in big events such as the motorsport fest and
+                  chances to help coordinate the event. </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="registration">
+      <div class="price">
+        <h3>SAE RPM Membership fees.</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>RPM annual fees</th>
+              <th>SAE Membership </th>
+              <th> Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1st</td>
+              <td>(150 X 4)<span class="cta">Rs</span></td>
+              <td>2478 <span class="cta">Rs</span></td>
+              <td>3078 <span class="cta">Rs</span></td>
+            </tr>
+
+            <tr>
+              <td>2nd</td>
+              <td>(150 X 3)<span class="cta">Rs</span></td>
+              <td>2124 <span class="cta">Rs</span></td>
+              <td>2574 <span class="cta">Rs</span></td>
+            </tr>
+
+            <tr>
+              <td>3rd</td>
+              <td>(150 X 2)<span class="cta">Rs</span></td>
+              <td>1770 <span class="cta">Rs</span></td>
+              <td>2070 <span class="cta">Rs</span></td>
+            </tr>
+
+            <tr>
+              <td>4th</td>
+              <td>(150 X 1)<span class="cta">Rs</span></td>
+              <td>1416 <span class="cta">Rs</span></td>
+              <td>1566 <span class="cta">Rs</span></td>
+            </tr>
+
+            <tr>
+              <td>Annual</td>
+              <td>(150 X 1)<span class="cta">Rs</span></td>
+              <td>472 <span class="cta">Rs</span></td>
+              <td>622 <span class="cta">Rs</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="disclaimer">*Drawback of annual SAE membership is that member can't participate in Baja and Supra</p>
+      </div>
+
       <div class="row">
         <div class="col-md-6">
-          <div class="headline">
-            <i class="fas fa-user-plus"></i>
-            <h2>Membership</h2>
-          </div>
+          <form action="" id="registration-form" name="submit-to-google-sheet">
+            <div class="form-group">
+              <label for="first-name">First name</label>
+              <input type="text" name="First Name" id="first-name" class="val-input" placeholder="Enter here..."
+                maxlength="120" required>
+            </div>
 
-          <h1>Get revved up.</h1>
+            <div class="form-group">
+              <label for="last-name">Last name</label>
+              <input type="text" name="Last Name" id="last-name" class="val-input" maxlength="120"
+                placeholder="Enter here...">
+            </div>
 
-          <h3>Become an RPM-SAEMUJ Member Today!</h3>
-          <a href="#registration" class="btn btn-primary">Register now</a>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="Email" id="email" class="val-input" placeholder="Enter here..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="number" name="Age" id="age" class="val-input" placeholder="Enter here..." min="16" max="100"
+                required>
+            </div>
+
+            <div class="form-group">
+              <p>Gender</p>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Gender" id="male" value="male" checked>
+                <label class="form-check-label" for="male">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Gender" id="female" value="female">
+                <label class="form-check-label" for="female">Female</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Gender" id="other" value="other">
+                <label class="form-check-label" for="other">Other</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <p>Year</p>
+              <div class="form-check form-check-inline">
+
+                <input class="form-check-input" type="radio" name="Year" id="1" value="1st" checked>
+                <label class="form-check-label" for="1">1st</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Year" id="2" value="2nd">
+                <label class="form-check-label" for="2">2nd</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Year" id="3" value="3rd">
+                <label class="form-check-label" for="3">3rd</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Year" id="4" value="4th">
+                <label class="form-check-label" for="4">4th</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact">Contact number</label>
+              <input type="tel" name="Contact number" id="contact" class="val-input" placeholder="Enter here..."
+                pattern="[0-9]{10}" minlength="10" maxlength="10" required>
+            </div>
+            <div class="form-group">
+              <label for="whatsapp">Whatsapp number</label>
+              <input type="tel" name="Whatsapp number" id="whatsapp" class="val-input" placeholder="Enter here..."
+                pattern="[0-9]{10}" minlength="10" maxlength="10" required>
+            </div>
+
+            <div class="form-group">
+              <label for="stream">Stream</label>
+              <select name="Stream" id="stream" required>
+                <option value="base" disabled selected>Select an option</option>
+                <option value="Btech">Btech</option>
+                <option value="Non Btech">Non Btech</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="branch">Branch</label>
+              <select name="Branch" id="branch" required>
+                <option disabled selected>Select an option</option>
+              </select>
+            </div>
+
+
+            <div class="form-group">
+              <label for="transaction">Transaction ID</label>
+              <input type="text" name="Transaction ID" id="transaction" class="val-input" placeholder="Enter here..."
+                required>
+            </div>
+
+            <button type="submit" id="submit-form" class="btn btn-success btn-lg">Submit</button>
+
+          </form>
         </div>
-
         <div class="col-md-6">
-          <h2>MEMEBER BENEFITS</h2>
-          <ul>
-            <li>
-              <p>Lorem ipsum dolor sit amet .</p>
-            </li>
-            <li>
-              <p>Lorem ipsum dolor sit amet .</p>
-            </li>
-            <li>
-              <p>Lorem ipsum dolor sit amet .</p>
-            </li>
-            <li>
-              <p>Lorem ipsum dolor sit amet .</p>
-            </li>
-            <li>
-              <p>Lorem ipsum dolor sit amet .</p>
-            </li>
-          </ul>
+          <div class="qr-code">
+            <img src="images/qr-code.jpeg" alt="">
+          </div>
+          <div class="instructions">
+            <h3>Instructions</h3>
+            <ol>
+              <li>Fill the registration form.</li>
+              <li>Scan the provided qr code.</li>
+              <li>Select new registration in patym <strong>Pay your fee</strong> option.</li>
+              <li>Select (New Membership fee)/(Membership Renewal Fee) as per criteria.</li>
+              <li>Type club name <strong>RPM-SAE MUJ</strong>.</li>
+              <li>Fill all the details.</li>
+              <li>After payment fill the transaction id of payment.</li>
+              <li>Submit the registration form.</li>
+            </ol>
+
+            <p class="disclaimer">*Kindly save the transaction ID for future reference</p>
+            <p class="disclaimer">*Kindly wait for acceptance mail for a period of 5-7 work days</p>
+          </div>
         </div>
       </div>
-    </section>
-  </header>
-  
-  <main class="container-fluid" id="registration">
-    <div class="price container">
-      <h3>SAE RPM Membership fees.</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>RPM annual fees</th>
-            <th>SAE Membership </th>
-            <th> Total</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1st</td>
-            <td>(150 X 4)<span class="cta">Rs</span></td>
-            <td>2478 <span class="cta">Rs</span></td>
-            <td>3078 <span class="cta">Rs</span></td>
-          </tr>
-
-          <tr>
-            <td>2nd</td>
-            <td>(150 X 3)<span class="cta">Rs</span></td>
-            <td>2124 <span class="cta">Rs</span></td>
-            <td>2574 <span class="cta">Rs</span></td>
-          </tr>
-
-          <tr>
-            <td>3rd</td>
-            <td>(150 X 2)<span class="cta">Rs</span></td>
-            <td>1770 <span class="cta">Rs</span></td>
-            <td>2070 <span class="cta">Rs</span></td>
-          </tr>
-
-          <tr>
-            <td>4th</td>
-            <td>(150 X 1)<span class="cta">Rs</span></td>
-            <td>1416 <span class="cta">Rs</span></td>
-            <td>1566 <span class="cta">Rs</span></td>
-          </tr>
-
-          <tr>
-            <td>Annual</td>
-            <td>(150 X 1)<span class="cta">Rs</span></td>
-            <td>472 <span class="cta">Rs</span></td>
-            <td>622 <span class="cta">Rs</span></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p class="disclaimer">*Drawback of annual SAE membership is that member can't participate in Baja and Supra</p>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <form action="" id="registration-form" name="submit-to-google-sheet">
-          <div class="form-group">
-            <label for="first-name">First name</label>
-            <input type="text" name="First Name" id="first-name" class="val-input" placeholder="Enter here..."
-              maxlength="120" required>
-          </div>
-
-          <div class="form-group">
-            <label for="last-name">Last name</label>
-            <input type="text" name="Last Name" id="last-name" class="val-input" maxlength="120"
-              placeholder="Enter here...">
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" name="Email" id="email" class="val-input" placeholder="Enter here..." required>
-          </div>
-
-          <div class="form-group">
-            <label for="age">Age</label>
-            <input type="number" name="Age" id="age" class="val-input" placeholder="Enter here..." min="16" max="100"
-              required>
-          </div>
-
-          <div class="form-group">
-            <p>Gender</p>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="Gender" id="male" value="male" checked>
-              <label class="form-check-label" for="male">Male</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="Gender" id="female" value="female">
-              <label class="form-check-label" for="female">Female</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="Gender" id="other" value="other">
-              <label class="form-check-label" for="other">Other</label>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <p>Year</p>
-            <div class="form-check form-check-inline">
-
-              <input class="form-check-input" type="radio" name="Year" id="1" value="1st" checked>
-              <label class="form-check-label" for="1">1st</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="Year" id="2" value="2nd">
-              <label class="form-check-label" for="2">2nd</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="Year" id="3" value="3rd">
-              <label class="form-check-label" for="3">3rd</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="Year" id="4" value="4th">
-              <label class="form-check-label" for="4">4th</label>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="contact">Contact number</label>
-            <input type="tel" name="Contact number" id="contact" class="val-input" placeholder="Enter here..."
-              pattern="[0-9]{10}" minlength="10" maxlength="10" required>
-          </div>
-          <div class="form-group">
-            <label for="whatsapp">Whatsapp number</label>
-            <input type="tel" name="Whatsapp number" id="whatsapp" class="val-input" placeholder="Enter here..."
-              pattern="[0-9]{10}" minlength="10" maxlength="10" required>
-          </div>
-
-          <div class="form-group">
-            <label for="stream">Stream</label>
-            <select name="Stream" id="stream" required>
-              <option value="base" disabled selected>Select an option</option>
-              <option value="Btech">Btech</option>
-              <option value="Non Btech">Non Btech</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="branch">Branch</label>
-            <select name="Branch" id="branch" required>
-              <option disabled selected>Select an option</option>
-            </select>
-          </div>
+    </main>
 
 
-          <div class="form-group">
-            <label for="transaction">Transaction ID</label>
-            <input type="text" name="Transaction ID" id="transaction" class="val-input" placeholder="Enter here..."
-              required>
-          </div>
+    <footer>
+      <h3 class="socials">Connect with us</h3>
+      <ul>
+        <li><a href="https://www.linkedin.com/company/rpm-saemuj/" class="footer-links" target="_blank"><i
+              class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.instagram.com/rpm_saemuj/?igshid=14ddhs1fn98e9" class="footer-links" target="_blank"><i
+              class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/saemuj" class="footer-links" target="_blank"><i
+              class="fab fa-facebook-square" target="_blank"></i></a></li>
+      </ul>
 
-          <div class="form-group">
-            <label for="transaction-image">Upload payment image</label>
-            <input type="file" name="Transaction image" id="transaction-image" accept="image/*" required>
-          </div>
-
-          <button type="submit" id="submit-form" class="btn btn-success btn-lg">Submit</button>
-
-        </form>
-      </div>
-      <div class="col-md-6">
-        <div class="qr-code">
-          <img src="images/qr-code.jpeg" alt="">
+      <div class="row container">
+        <div class="col-md-6">
+          <h3>Address</h3>
+          <address> <a
+              href="https://www.google.com/maps/place/Manipal+University+Jaipur/@26.8438552,75.5630456,17z/data=!3m1!4b1!4m5!3m4!1s0x396c4850e05bee9b:0x1b8d67402d4eb863!8m2!3d26.8438552!4d75.5652343"
+              target="_blank">Manipal University Jaipur,
+              Dehmi Kalan, Near GVK Toll Plaza,
+              Jaipur-Ajmer Expressway, Jaipur,
+              Rajasthan 303007
+            </a>
+            <address>
         </div>
-        <div class="instructions">
-          <h3>Instructions</h3>
-          <ol>
-            <li>Fill the registration form.</li>
-            <li>Scan the provided qr code.</li>
-            <li>Select new registration in patym <strong>Pay your fee</strong> option.</li>
-            <li>Select (New Membership fee)/(Membership Renewal Fee) as per criteria.</li>
-            <li>Type club name <strong>RPM-SAE MUJ</strong>.</li>
-            <li>Fill all the details.</li>
-            <li>After payment fill the transaction id of payment.</li>
-            <li>Submit the registration form.</li>
-          </ol>
-
-          <p class="disclaimer">*Kindly save the transaction ID for future reference</p>
-          <p class="disclaimer">*Kindly wait for acceptance mail for a period of 5-7 work days</p>
+        <div class=col-mid-6>
+          <h3>for enquiries contact us at:</h3>
+          <p class="contact-mail">saemuj@gmail.com</p>
         </div>
       </div>
-    </div>
-  </main>
-
-
-  <footer class="container">
-    <h3 class="socials">Connect with us</h3>
-    <ul>
-      <li><a href="https://www.linkedin.com/company/rpm-saemuj/" class="footer-links" target="_blank"><i
-            class="fab fa-linkedin"></i></a></li>
-      <li><a href="https://www.instagram.com/rpm_saemuj/?igshid=14ddhs1fn98e9" class="footer-links" target="_blank"><i
-            class="fab fa-instagram"></i></a></li>
-      <li><a href="https://www.facebook.com/saemuj" class="footer-links" target="_blank"><i
-            class="fab fa-facebook-square" target="_blank"></i></a></li>
-    </ul>
-
-    <div class="row container">
-      <div class="col-md-6">
-        <h3>Address</h3>
-        <address> <a
-            href="https://www.google.com/maps/place/Manipal+University+Jaipur/@26.8438552,75.5630456,17z/data=!3m1!4b1!4m5!3m4!1s0x396c4850e05bee9b:0x1b8d67402d4eb863!8m2!3d26.8438552!4d75.5652343"
-            target="_blank">Manipal University Jaipur,
-            Dehmi Kalan, Near GVK Toll Plaza,
-            Jaipur-Ajmer Expressway, Jaipur,
-            Rajasthan 303007
-          </a>
-          <address>
-      </div>
-      <div class=col-mid-6>
-        <h3>for enquiries contact us at:</h3>
-
-      </div>
-    </div>
-    <p class="container">Copyright © 2020 RPM-SAE MUJ Muj. All Rights Reserved </p>
-  </footer>
-</div>
+      <p class="container">Copyright © 2020 RPM-SAE MUJ Muj. All Rights Reserved </p>
+    </footer>
+  </div>
 
   <script>
     var navBtnOutter = document.querySelector("#outter-btn");
@@ -331,54 +330,57 @@
       navBar.classList.toggle('sticky-navbar', scrollY > 0);
     });
 
-      $("#stream").change(function () {
+    $("#stream").change(function () {
 
-        var $dropdown = $(this);
+      var $dropdown = $(this);
 
-        $.getJSON("branch.json", function (data) {
+      $.getJSON("branch.json", function (data) {
 
-          var key = $dropdown.val();
-          var vals = [];
-          switch (key) {
-            case 'Btech':
-              vals = data.Btech.split(",");
-              break;
-            case 'base':
-              vals = ['Please choose stream'];
-          }
+        var key = $dropdown.val();
+        var vals = [];
+        switch (key) {
+          case 'Btech':
+            vals = data.Btech.split(",");
+            break;
+          case 'Non Btech':
+            vals = data["Non Btech"].split(",");
+            break;
+          case 'base':
+            vals = ['Please choose stream'];
+        }
 
-          var $branch = $('#branch');
-          $branch.empty();
-          $.each(vals, function (index, value) {
-            $branch.append('<option value="' + value + '">' + value + '</option>');
-          });
+        var $branch = $('#branch');
+        $branch.empty();
+        $.each(vals, function (index, value) {
+          $branch.append('<option value="' + value + '">' + value + '</option>');
         });
       });
-
+    });
   </script>
 
   <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+  <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+  <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 
 
   <script>
     const scriptURL = "https://script.google.com/macros/s/AKfycbyWlPOxSHJUCKQT2liVrET5tNlE9Gtgrs_jgO9m6Jlu56oUsaQ/exec"
     const form = document.forms['submit-to-google-sheet']
 
-    form.addEventListener('submit', e=>{
+    form.addEventListener('submit', e => {
       e.preventDefault()
-     
+
       fetch(scriptURL, {
-        method: 'POST',
-        body: new FormData(form)})
+          method: 'POST',
+          body: new FormData(form)
+        })
         .then(response => alert("Success!"))
         .catch(error => alert("error!"))
     });
   </script>
 
-  
-<script src="https://kit.fontawesome.com/fc03fbdcbe.js" crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/fc03fbdcbe.js" crossorigin="anonymous"></script>
 
 </body>
 

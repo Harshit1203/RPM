@@ -22,62 +22,44 @@
 </head>
 
 <body>
-  <header>
-    <nav class="nav-bar">
-      <a href="https://jaipur.manipal.edu/" target="_blank"><img class="logo" id="college"
-          src="images\\manipal-logo.jpeg" alt="Manipal University Logo" /></a>
-      <a class="navbar-brand " href="#">RPM-SAEMUJ</a>
+  <nav class="nav-bar ">
+    <a href="https://jaipur.manipal.edu/" target="_blank"><img class="logo" id="college" src="images\\manipal-logo.jpeg"
+        alt="Manipal University Logo" /></a>
+    <a class="navbar-brand " href="#">RPM-SAEMUJ</a>
 
-      <div class="nav-btn hide-mobo" id="outter-btn">
+    <div class="nav-btn hide-mobo" id="outter-btn">
+      <span class="fas fa-bars"></span>
+    </div>
+
+    <div class="hide show-desktop" id="nav-menu">
+      <div class="hide-mobo nav-btn" id="inner-btn">
         <span class="fas fa-bars"></span>
       </div>
 
-      <div class="hide show-desktop" id="nav-menu">
-        <div class="hide-mobo nav-btn" id="inner-btn">
-          <span class="fas fa-bars"></span>
-        </div>
-
-        <div class="nav-links">
-          <a href="#"><span class="current">Home</span></a>
-          <a href="events.html">Events</a>
-          <a href="blogs.html">Blogs</a>
-          <a href="membership.html">Membership</a>
-          <a href="teams.html">Teams</a>
-        </div>
+      <div class="nav-links">
+        <a href="#"><span class="current">Home</span></a>
+        <a href="events.html">Events</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="membership.html">Membership</a>
+        <a href="teams.html">Teams</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section class="banner fluid-container">
-      <video playsinline="playsinline" autoplay muted loop id="background-vid">
-        <source src="images\background-vid.mp4" type="video/mp4">
-      </video>
+  <header>
+    <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="images/background-vid.mp4" type="video/mp4">
+  </video>
 
-      <div class="banner-text">
-        <ul>
-          <li>
-            <h1>R</h1>
-          </li>
-          <li>
-            <h1>P</h1>
-          </li>
-          <li>
-            <h1>M</h1>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h1>S</h1>
-          </li>
-          <li>
-            <h1>A</h1>
-          </li>
-          <li>
-            <h1>E</h1>
-          </li>
-        </ul>
-        <h2>Manipal University Jaipur</h2>
+    <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-4">RPM SAE</h1>
+        <p class="lead mb-0">Manipal University Jaipur</p>
       </div>
-    </section>
+    </div>
+  </div>
   </header>
 
 
@@ -94,44 +76,45 @@
     </p>
   </div>
 
-  <div class="SAE row fluid-container">
-    <div class="col-md-6">
-      <h2>And what's SAE?</h2>
-      <p>
-        SAE<strong>(Society of Automotive Engineers)</strong> International,
-        initially established as the Society of Automotive Engineers, is a
-        U.S.-based, globally active professional association and standards
-        organization for engineering professionals in various industries.<span id="dots">..</span>
-        <span id="more">
-          Principal emphasis is placed on transport industries such as
-          automotive, aerospace, and commercial vehicles. SAE International
-          coordinates the development of technical standards based on best
-          practices identified and described by SAE committees and task forces.
-          Task forces are composed of engineering professionals from relevant
-          fields. SAE International has more than 138,000 members globally.
-          Membership is granted to individuals, not through companies. Aside
-          from its standardization efforts, SAE International also devotes
-          resources to projects and programs in STEM education, professional
-          certification, and collegiate design competitions.
-          SAEINDIA is a strategic alliance partner of SAE International
-        registered in India as an Indian nonprofit engineering and scientific
-        society dedicated to the advancement of the mobility industry in India
-      </span></p>
-      <a onclick="readToggle()" id="read-btn" class="text-primary">Read more</a>
+  <div class="SAE">
+    <div class="row">
+      <div class="col-md-6 content">
+        <h2>And what's SAE?</h2>
+        <p>
+          SAE<strong>(Society of Automotive Engineers)</strong> International,
+          initially established as the Society of Automotive Engineers, is a
+          U.S.-based, globally active professional association and standards
+          organization for engineering professionals in various industries.<span id="dots">..</span>
+          <span id="more">
+            Principal emphasis is placed on transport industries such as
+            automotive, aerospace, and commercial vehicles. SAE International
+            coordinates the development of technical standards based on best
+            practices identified and described by SAE committees and task forces.
+            Task forces are composed of engineering professionals from relevant
+            fields. SAE International has more than 138,000 members globally.
+            Membership is granted to individuals, not through companies. Aside
+            from its standardization efforts, SAE International also devotes
+            resources to projects and programs in STEM education, professional
+            certification, and collegiate design competitions.
+            SAEINDIA is a strategic alliance partner of SAE International
+            registered in India as an Indian nonprofit engineering and scientific
+            society dedicated to the advancement of the mobility industry in India
+          </span></p>
+        <a onclick="readToggle()" id="read-btn" class="text-primary">Read more</a>
 
         <button type="button" class="btn btn-outline-info"><a href="https://www.saeindia.org/" class="cta"
             target='blank'>SAEINDIA</a></button>
-    </div>
-
-    <div class="col-md-6 image">
-      <div class="image" id="innerdiv">
-        <img src="images\WhatsApp Image 2020-10-30 at 3.15.10 PM.jpg" alt="sport car image">
       </div>
 
+      <div class="col-md-6 image">
+        <div id="innerdiv">
+          <img src="images\WhatsApp Image 2020-10-30 at 3.15.10 PM.jpg" alt="sport car image">
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="vision ">
+  <div class="vision">
     <h2>Our Vision</h2>
 
     <div class="row fluid-container">
@@ -159,7 +142,7 @@
   </div>
 
 
-  <div class="contact fluid-container">
+  <div class="contact">
     <div class="content">
       <h2>Contact Us</h2>
       <p>For all enquiries please email us using the form below.</p>
@@ -171,12 +154,14 @@
         <button type="submit" class="btn btn-success btn-lg" name="submit">Submit</button>
       </form>
 
-      <div id="status" class="success"><p>Success</p></div>
+      <div id="status" class="success">
+        <p>Success</p>
+      </div>
     </div>
 
   </div>
 
-  <footer class="container">
+  <footer>
     <h3 class="socials">Connect with us</h3>
     <ul>
       <li><a href="https://www.linkedin.com/company/rpm-saemuj/" class="footer-links" target="_blank"><i
@@ -201,7 +186,7 @@
       </div>
       <div class=col-mid-6>
         <h3>for enquiries contact us at:</h3>
-
+        <p class="contact-mail">saemuj@gmail.com</p>
       </div>
     </div>
     <p class="container">Copyright © 2020 RPM-SAE MUJ Muj. All Rights Reserved </p>
@@ -268,8 +253,6 @@
         moreText.style.display = "inline";
       }
     }
-
-    
   </script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
