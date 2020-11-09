@@ -218,19 +218,21 @@
                 pattern="[0-9]{10}" minlength="10" maxlength="10" required>
             </div>
 
-            <div class="form-group">
-              <label for="stream">Stream</label>
-              <select name="Stream" id="stream" required>
-                <option value="base" disabled selected>Select an option</option>
-                <option value="Btech">Btech</option>
-                <option value="Non Btech">Non Btech</option>
-              </select>
-            </div>
 
             <div class="form-group">
               <label for="branch">Branch</label>
               <select name="Branch" id="branch" required>
                 <option disabled selected>Select an option</option>
+                <option value="Automobile Engineering">Automobile Engineering</option>
+                <option value="Chemical Engineering">Chemical Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Computer Science Engineering">Computer Science Engineering</option>
+                <option value="Computer and Communication Engineering">Computer and Communication Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Electronic & Communication Engineering">Electronic & Communication Engineering</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Mechatronics Engineering">Mechatronics Engineering</option>
               </select>
             </div>
 
@@ -246,9 +248,11 @@
           </form>
         </div>
         <div class="col-md-6">
+           <a href="https://paytm.com/education" ></a>
           <div class="qr-code">
-            <img src="images/qr-code.jpeg" alt="">
+           <img src="images/qr-code.jpeg" alt="">
           </div>
+          </a>
           <div class="instructions">
             <h3>Instructions</h3>
             <ol>
@@ -330,32 +334,6 @@
       navBar.classList.toggle('sticky-navbar', scrollY > 0);
     });
 
-    $("#stream").change(function () {
-
-      var $dropdown = $(this);
-
-      $.getJSON("branch.json", function (data) {
-
-        var key = $dropdown.val();
-        var vals = [];
-        switch (key) {
-          case 'Btech':
-            vals = data.Btech.split(",");
-            break;
-          case 'Non Btech':
-            vals = data["Non Btech"].split(",");
-            break;
-          case 'base':
-            vals = ['Please choose stream'];
-        }
-
-        var $branch = $('#branch');
-        $branch.empty();
-        $.each(vals, function (index, value) {
-          $branch.append('<option value="' + value + '">' + value + '</option>');
-        });
-      });
-    });
   </script>
 
   <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
