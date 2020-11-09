@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="images/favicon.ico" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#0183E8" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -12,7 +11,7 @@
   <meta name="description" content=" RPM-SAEMUJ Official website" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <link rel="icon" href="favicon.ico" />
   <title>Team</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -61,7 +60,7 @@
       </h1>
     </div>
   </div>
-  
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <form action="">
@@ -130,22 +129,23 @@
       navBar.classList.toggle('sticky-navbar', scrollY > 0);
     })
 
- anime.timeline({loop: true})
-  .add({
-    targets: '.ml15 .word',
-    scale: [1.5,1],
-    opacity: [0,1],
-    easing: "easeOutCirc",
-    duration: 800,
-    delay: (el, i) => 800 * i
-  }).add({
-    targets: '.ml15',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-      
+    anime.timeline({
+        loop: true
+      })
+      .add({
+        targets: '.ml15 .word',
+        scale: [1.5, 1],
+        opacity: [0, 1],
+        easing: "easeOutCirc",
+        duration: 800,
+        delay: (el, i) => 800 * i
+      }).add({
+        targets: '.ml15',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
   </script>
 
 </body>
