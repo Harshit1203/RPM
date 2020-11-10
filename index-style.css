@@ -307,7 +307,7 @@ header .container {
 input,
 textarea {
     margin: 2.1rem auto;
-    width: 70%;
+    width: 90%;
     display: block;
     line-height: 2em;
     height: 3rem;
@@ -328,7 +328,7 @@ textarea {
 #status {
     margin: 1rem;
     padding: 1rem;
-    display: inline-block;
+    display: none;
     width: 80%;
     border-radius: 30px;
     font-size: large;
@@ -338,12 +338,12 @@ textarea {
 
 #status.success {
     background-color: rgba(63, 163, 63, 0.74);
-    animation: status 4s ease forwards;
+    animation: status 10s ease forwards;
 }
 
 #status.error {
     background-color: rgba(238, 107, 107, 0.705);
-    animation: status 4s ease forwards;
+    animation: status 10s ease forwards;
 }
 
 @keyframes status {
@@ -386,7 +386,7 @@ footer ul li {
 
 .contact-mail {
     color: #007bff;
-    font-size: 16px;
+    font-size: 12px;
     text-align: left;
 }
 

@@ -146,16 +146,17 @@
     <div class="content">
       <h2>Contact Us</h2>
       <p>For all enquiries please email us using the form below.</p>
-      <form action="mail.php" method="post" enctype="multipart/form-data">
+      <form>
         <input type="text" placeholder="Full Name" name="name" required />
         <input type="email" placeholder="Email Address" name="email" required />
         <input type="Contact number" placeholder="Contact number" name="contact" />
         <textarea placeholder="Enter Message here..." name="message" required></textarea>
-        <button type="submit" class="btn btn-success btn-lg" name="submit">Submit</button>
+        <button type="submit" class="btn btn-success btn-lg" name="submit" id="submit-btn">Submit</button>
       </form>
 
-      <div id="status" class="success">
-        <p>Success</p>
+      <div id="status" class="error">
+        <p>Error</p>
+        <p>Kindly contact us through mail.</p>
       </div>
     </div>
 
@@ -186,7 +187,12 @@
       </div>
       <div class=col-mid-6>
         <h3>for enquiries contact us at:</h3>
-        <p class="contact-mail">saemuj@gmail.com</p>
+        <p class="contact-mail" style="padding-bottom:1em">saemuj@gmail.com</p>
+        <p class="contact-mail" >Tapan Pathre (Chairperson)</p>
+        <p class="contact-mail"style="padding-bottom:1em">contact info : +91 9819657446</p>
+    
+        <p class="contact-mail">Prakhar Pathak (Vice Chairperson)</p>
+        <p class="contact-mail">contact info : +91 9549837430</p>
       </div>
     </div>
     <p class="container">Copyright © 2020 RPM-SAE MUJ Muj. All Rights Reserved </p>
@@ -253,6 +259,18 @@
         moreText.style.display = "inline";
       }
     }
+
+    var submitBtn = document.querySelector("#submit-btn")
+
+    submitBtn.addEventListener("click" ,function(e) {
+      e.preventDefault();
+      $("#status").css("display", "inline-block")
+  
+  
+     window.setTimeout(function(e){
+        $("#status").css("display", "none")
+      }, 10000)
+        })
   </script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
