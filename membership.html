@@ -233,6 +233,7 @@
                 <option value="Information Technology">Information Technology</option>
                 <option value="Mechanical Engineering">Mechanical Engineering</option>
                 <option value="Mechatronics Engineering">Mechatronics Engineering</option>
+                <option value="Other">Other</option>
               </select>
             </div>
 
@@ -348,13 +349,13 @@
 
 
   <script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycbyWlPOxSHJUCKQT2liVrET5tNlE9Gtgrs_jgO9m6Jlu56oUsaQ/exec"
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzXYw8Cnal7sdOMKWHD6utQPtP7hNwH0FiYDGIMGy3OM02JqFY/exec";
     const form = document.forms['submit-to-google-sheet']
 
     form.addEventListener('submit', e => {
       e.preventDefault()
 
-      fetch(scriptURL, {
+ fetch(scriptURL, {
           method: 'POST',
           body: new FormData(form)
         })
