@@ -246,6 +246,22 @@ td {
     font-weight: 600;
 }
 
+.error{
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius:12px ;
+    background-color: rgba(226, 93, 93, 0.815);
+}
+
+.error a{
+    width: 10%;
+    border-radius: 12px;
+    background-color: #0f77e7da;
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
 #registration .col-md-6{
      margin: 2rem 0;
 }
